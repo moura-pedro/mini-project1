@@ -1,0 +1,200 @@
+/* Root Variables for Consistent Colors */
+:root {
+  --black: #060e0e;
+  --dark_gray: #213841;
+  --green: #15585f;
+  --gray: #6c888b;
+  --light_gray: #b3b6b6;
+  --white: #ececec;
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, serif;
+  color: var(--black);
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(to right, var(--green), var(--dark_gray));
+  color: var(--white);
+}
+
+header h1 {
+  margin: 0;
+  padding-bottom: 20px;
+  font-family: Montserrat, sans-serif;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+header nav ul li {
+  margin: 0;
+}
+
+header nav ul li a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 1px solid var(--light_gray);
+  transition: color 0.3s, border-color 0.3s;
+  border-radius: 5px;
+}
+
+header nav ul li a:hover {
+  color: var(--green);
+  border-color: var(--green);
+}
+
+li {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Section Styling */
+section {
+  padding: 20px;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, serif;
+}
+
+h2 {
+  font-family: Montserrat, sans-serif;
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--light_gray);
+}
+
+section#about p {
+  margin-bottom: 10px;
+}
+
+section#skills ul {
+  list-style: disc inside;
+  margin-left: 20px;
+}
+
+section#projects article {
+  margin-bottom: 20px;
+}
+
+section#projects article h3 {
+  font-family: Montserrat, sans-serif;
+  margin-bottom: 5px;
+}
+
+section#resume p, section#contact p {
+  margin-bottom: 10px;
+}
+
+/* Form Styling */
+section#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+section#contact label {
+  font-weight: bold;
+}
+
+section#contact input, section#contact textarea {
+  padding: 10px;
+  border: 1px solid var(--light_gray);
+  border-radius: 5px;
+}
+
+section#contact button {
+  padding: 10px 15px;
+  background-color: var(--green);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+section#contact button:hover {
+  background-color: var(--dark_gray);
+}
+
+/* Footer Styling */
+footer {
+  background: linear-gradient(to right, var(--green), var(--dark_gray));
+  color: var(--white);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .main-footer ul , .social-media ul{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 10px;
+
+  flex-direction: row; /* This will align the items in a row */
+  justify-content: center; /* This centers the items horizontally */
+  gap: 15px; /* Adds spacing between items */
+}
+
+footer a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: var(--light_gray);
+}
+
+footer .copyright {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header, .main-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .social-media {
+    border-top: 1px solid var(--light_gray);
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+
+  section#projects article {
+    width: 100%;
+  }
+}
