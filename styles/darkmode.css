@@ -1,14 +1,15 @@
-/* Dark Mode Root Variables for Consistent Colors */
+/* Dark mode -> I basically just swapped the colors. */
 :root {
-    --black: #ececec;
-    --dark_gray: #b3b6b6;
-    --green: #15585f;
-    --gray: #6c888b;
-    --light_gray: #213841;
-    --white: #060e0e;
-  }
-  
-/* General Reset */
+  --black: #ececec;
+  --dark_gray: #b3b6b6;
+  --green: #15585f;
+  --gray: #6c888b;
+  --light_gray: #213841;
+  --white: #060e0e;
+}
+
+
+/* -------------- General Reset -------------- */
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +29,8 @@ main {
   flex: 1;
 }
 
-/* Header Styling */
+
+/* -------------- Header Styling -------------- */
 header {
   display: flex;
   justify-content: space-between;
@@ -70,7 +72,7 @@ li {
   padding-left: 0;
 }
 
-/* Section Styling */
+/* -------------- Section Styling -------------- */
 section {
   padding: 20px;
 }
@@ -100,11 +102,11 @@ section#resume p, section#contact p {
 
 /* Hamburger Menu Styling */
 .menu-toggle {
-  display: none; /* Hide the checkbox */
+  display: none; /* hide the checkbox */
 }
 
 .menu-icon {
-  display: none; /* Hide the hamburger icon by default */
+  display: none; /* hide the hamburger icon by default */
   font-size: 2rem;
   cursor: pointer;
   color: var(--white);
@@ -112,7 +114,8 @@ section#resume p, section#contact p {
   position: relative;
 }
 
-/* Projects Section Styling */
+
+/* -------------- Projects Section Styling -------------- */
 section#projects {
   padding: 20px;
   background-color: var(--light_gray);
@@ -124,7 +127,7 @@ section#projects {
 }
 
 section#projects article {
-  flex: 1 1 calc(30% - 20px);
+  flex: 1 1 calc(30% - 20px);  /* take 1/3 ish width minus the gap on larger screens */
   padding: 15px;
   background-color: var(--white);
   border: 1px solid var(--dark_gray);
@@ -137,7 +140,7 @@ section#projects h2, section#resume h2 {
   margin-bottom: 20px;
   border-bottom: 2px solid var(--gray);
   padding-bottom: 10px;
-  width: 100%; /* Ensure the heading takes full width */
+  width: 100%; /* ensure the heading takes full width */
 }
 
 section#projects article h3, section#resume article h3 {
@@ -158,7 +161,8 @@ section#projects article p,  section#resume article p{
   color: var(--black);
 }
 
-/* Resume Section */
+
+/* -------------- Resume Section -------------- */
 section#resume {
   padding: 20px;
   background-color: var(--light_gray);
@@ -182,7 +186,7 @@ section#resume article {
 }
 
 
-/* Form Styling */
+/* -------------- Form Styling -------------- */
 section#contact form {
   display: flex;
   flex-direction: column;
@@ -216,7 +220,8 @@ section#contact button:hover {
   background-color: var(--dark_gray);
 }
 
-/* Footer Styling */
+
+/* -------------- Footer Styling -------------- */
 footer {
   background: linear-gradient(to right, var(--green), var(--light_gray));
   color: var(--black);
@@ -248,7 +253,8 @@ footer .copyright {
   text-align: center;
 }
 
-/* Responsive Design */
+
+/* -------------- Responsive Design -------------- */
 @media (max-width: 768px) {
   header, .main-footer {
     align-items: flex-start;
@@ -306,7 +312,6 @@ footer .copyright {
   footer .main-footer ul li::before {
     content: '- ';
   }
-
 
   footer .social-media {
     border-top: 1px solid var(--light_gray);
