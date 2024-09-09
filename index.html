@@ -11,6 +11,8 @@
 <body>
     <header>
         <h1>Pedro Moura</h1>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label> <!-- Hamburger icon -->
         <nav>
             <ul>
                 <li><a href="#about">About Me</a></li>
@@ -68,19 +70,35 @@
 
         <section id="projects">
             <h2>Projects</h2>
-            <article>
-                <h3>Climbing Performance Prediction</h3>
-                <p>Try to redict using a regression model the hardest V grade a climber 
-                    can climb based on personal features (height, weight, sex, wingspam...).</p>
+            <article> 
+                <h3> Climbing Performance Prediction</h3>
+                <img src="images/climb.gif" alt="me falling" width="200" height="200" />
+
+                <p>
+                    Try to redict using a regression model the hardest V grade a climber 
+                    can climb based on personal features - height, weight, sex, wingspam, etc.
+                    The goal was to use this as a "safety threshold", where climbers could follow
+                    the grade suggested, and consequently avoid getting injured (like me in the gif).
+                </p>
+                <p><a href="https://github.com/moura-pedro/Climbing-Performance-Prediction"> [Click Here]</a></p>
             </article>
             <article>
                 <h3>Othello's game with AI</h3>
-                <p>Allows a human player to play against computer machine, which runs Min-Max 
-                    algorithm with alpha-beta prunning.</p>
+                <img src="images/othello.png" alt="game running" width="400" height="400" />
+
+                <p>Developed in Python with a GUI that allows a human player to play against computer machine,
+                    which runs Min-Max algorithm with alpha-beta prunning.</p>
+                <p><a href="https://github.com/moura-pedro/Othello-AI"> [Click Here]</a></p>
+
             </article>
-            </article>
+            <article>
                 <h3>Melbourne Beach Surf Forecast</h3>
-                <p>Utilize unsupervised learning to cluster surf conditions at Melbourne Beach, FL.</p>
+                <img src="images/surf.png" alt="cluster" width="400" height="340" />
+
+                <p>Utilize unsupervised learning to cluster surf conditions at Melbourne Beach, FL.
+                    That's just me trying to find excuses why I can catch a single wave.</p>
+                <p><a href="https://github.com/moura-pedro/Melbourne-Beach-Surf-Forecast"> [Click Here]</a></p>
+
             </article>
 
         </section>
@@ -115,19 +133,20 @@
                 </p>
             </article>
 
-            <article></article>
+            <article>
                 <h3>Software Engineer Intern @ Amazon.com</h3>
                 <h4>May 2022 - Aug 2022 | Washington, DC </h4>
                 <img src="images/2022.jpeg" alt="photo at amazon HQ2" width="450" height="400" />
 
                 <p>
                     My team was under FinTech Organization, so we had to preprocess a lot of invoices
-                    data. For my project, I built an enhanced and native landing page using React where 
-                    other teams could find invoices easier. Developed a User Preferences page to help 
-                    usability. Improved users' experience by adding users' requested features.
+                    data. For my project, I built a landing page using React where other teams could 
+                    search and apply filters to find specific invoices easier. Also, developed a "User Preferences"
+                    page to help usability. Ended up finishing my project before deadline, so I started adding
+                    some features requested by users (both my team and other teams).
                 </p>
             </article>
-            <a href="resume.pdf" target="_blank">Download Resume</a>
+            <a href="docs/PMoura_Resume.pdf" target="_blank">Download Resume</a>
         </section>
 
         <section id="contact">
@@ -161,8 +180,8 @@
 
         <div class="social-media">
             <ul>
-                <li><a href="https://www.linkedin.com/in/pedroomour/">linkedIn</a></li>
-                <li><a href="https://github.com/moura-pedro">github</a></li>
+                <li><a href="https://www.linkedin.com/in/pedroomour/">LinkedIn</a></li>
+                <li><a href="https://github.com/moura-pedro">GitHub</a></li>
             </ul>
         </div>
         <div class="copyright">
