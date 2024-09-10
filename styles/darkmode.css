@@ -319,3 +319,35 @@ footer .copyright {
     margin-top: 10px;
   }
 }
+
+
+/* fade-in effect on headers nav (Extra Credit)*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+header nav ul li a {
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+  transition: transform 0.3s, border-radius 0.3s; 
+}
+
+/* sequential delay for each link */
+header nav ul li:nth-child(1) a { animation-delay: 0.1s; }
+header nav ul li:nth-child(2) a { animation-delay: 0.2s; }
+header nav ul li:nth-child(3) a { animation-delay: 0.3s; }
+header nav ul li:nth-child(4) a { animation-delay: 0.4s; }
+header nav ul li:nth-child(5) a { animation-delay: 0.5s; }
+
+header nav ul li a:hover {
+  transform: scale(1.05);
+  border-radius: 50px; 
+}
+
